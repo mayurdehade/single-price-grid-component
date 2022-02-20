@@ -24,8 +24,8 @@ body{
 /* grid  */
 .wrapper{
     display: grid;
-    grid-template-areas: 'first first'
-    'second third';
+    grid-template-areas: 'first first first first'
+    'second second third third';
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.507);
 }
@@ -61,18 +61,71 @@ body{
 .second{
     grid-area: second;
     background-color: #2ab2af;
-    height: 22rem;
+    height: 25rem;
     border-radius: 0 0 0 10px;
     color: #ffffff;
+    width: 100%;
+    padding-right: 0;
+}
+.second-header{
+    font-size: 1.8rem;
+}
+.price{
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.price span{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #ffffffb6;
+    vertical-align: middle;
+}
+.full-access{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.btn{
+    margin-top: 2.7rem;
+    height: 4.5rem;
+    width: 85%;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #c0df34;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(66, 66, 66, 0.192);
 }
 
 /* Third Box */
 .third{
     grid-area: third;
     background-color: #4abebd;
-    height: 22rem;
+    height: 25rem;
     border-radius: 0 0 10px 0;
     color: #ffffff;
+    width: 100%;
 }
-.attribution { font-size: 1.5rem; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.third-header{
+    font-size: 1.8rem;
+}
+.third-list{
+    font-size: 1.5rem;
+    list-style: none;
+    margin-top: 1.5rem;
+    color: #ffffffb6;
+    line-height: 1.4;
+}
+.attribution{ 
+    font-size: 1.5rem; 
+    text-align: center; 
+    padding-bottom: 3rem;
+
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+.attribution a:hover{
+    color: #4abebd;
+}
